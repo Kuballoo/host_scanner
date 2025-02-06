@@ -1,4 +1,4 @@
-# Project Title
+# Host scanner
 
 This script scans a given IP address or network, retrieves information about active devices, and optionally detects their operating systems. The results are saved in a CSV file.
 
@@ -37,25 +37,25 @@ This script is designed **only for Windows** and requires:
 
 Run the script with the following arguments:
 
-    - Scan a single IP:
-    ```sh
+Scan a single IP:
+```sh
     python scanner.py -i 192.168.1.53
-    ```
+```
 
-    - Scan an entire network:
-    ```sh
+Scan an entire network:
+```sh
     python scanner.py -i 192.168.1.0/24
-    ```
+```
 
-    - Skip specific IPs during scanning:
-    ```sh
+Skip specific IPs during scanning:
+```sh
     python scanner.py -i 192.168.1.0/24 -s 192.168.1.34 
-    ```
+```
 
-    - Scan and detect Windows OS:
-    ```sh
+Scan and detect Windows OS:
+```sh
     python scanner.py -i 192.168.1.0/24 -o
-    ```
+```
 ## License
 
 Include the project's license information. For example: This project is licensed under the [Creative Commons NonCommercial License (CC BY-NC)](https://creativecommons.org/licenses/by-nc/4.0/deed.en).
