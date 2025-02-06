@@ -39,22 +39,22 @@ Run the script with the following arguments:
 
 Scan a single IP:
 ```sh
-    python scanner.py -i 192.168.1.53
+python scanner.py -i 192.168.1.53
 ```
 
 Scan an entire network:
 ```sh
-    python scanner.py -i 192.168.1.0/24
+python scanner.py -i 192.168.1.0/24
 ```
 
 Skip specific IPs during scanning:
 ```sh
-    python scanner.py -i 192.168.1.0/24 -s 192.168.1.34 
+python scanner.py -i 192.168.1.0/24 -s 192.168.1.34 
 ```
 
 Scan and detect Windows OS:
 ```sh
-    python scanner.py -i 192.168.1.0/24 -o
+python scanner.py -i 192.168.1.0/24 -o
 ```
 ## License
 
