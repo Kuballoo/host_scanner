@@ -89,7 +89,8 @@ def get_operating_system(ip: str):
             f'wmic /node:{ip} os get Caption', 
             capture_output=True, timeout=4
         )
-        output = result.stdout.strip().split("\n")[-1]  # Pobiera ostatnią linię
+        output = result.stdout.decode().replace("\n", "").replace("\r", "")
+        output = " ".join(output.split()[1:])
         return output if output else "UNKNOWN OS"
         # if 'LTSC' in result.stdout.decode() or 'Windows 11' in result.stdout.decode():
         #     return 1
